@@ -76,8 +76,8 @@ function t2k_setup_root(){
   done
 
   if [ -z "$1" ]; then
-    echo "Usage: setup_root <version-tag>"
-    echo "Example: setup_root v6-32-04"
+    echo "Usage: t2k_setup_root <version-tag>"
+    echo "Example: t2k_setup_root v6-32-04"
   else
     echo "   ├─ ROOT Prefix : $(root-config --prefix)"
     echo "   ├─ ROOT Version : $(root-config --version)"
