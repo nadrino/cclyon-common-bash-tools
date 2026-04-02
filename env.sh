@@ -48,6 +48,17 @@ function t2k_link_common_soft(){
   echo "T2K common software has been setup."
 }; export -f t2k_link_common_soft
 
+function t2k_enable_gundam_lts(){
+
+  export PATH="$COMMON_INSTALL_DIR/gundam-lts/bin:$PATH"
+  export LD_LIBRARY_PATH="$COMMON_INSTALL_DIR/gundam-lts/lib:$LD_LIBRARY_PATH"
+
+  t2k_remove_duplicate_paths PATH
+  t2k_remove_duplicate_paths LD_LIBRARY_PATH
+
+  echo "T2K GUNDAM LTS software has been setup."
+}; export -f t2k_enable_gundam_lts
+
 function t2k_setup_root(){
 
   if [ -z "$1" ]; then
