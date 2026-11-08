@@ -221,5 +221,5 @@ common_soft_enable_devtools() {
   }
 }
 
-echo "Common env enabled. Use `common_soft_setup` to setup installed softwares."
+echo "Common env enabled. Use 'common_soft_setup' to setup installed softwares."
 
