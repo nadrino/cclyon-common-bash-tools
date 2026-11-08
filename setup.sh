@@ -220,3 +220,6 @@ common_soft_enable_devtools() {
     cmake --build "$build_dir" --target install
   }
 }
+
+echo "Common env enabled. Use `common_soft_setup` to setup installed softwares."
+
